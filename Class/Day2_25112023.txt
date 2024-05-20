@@ -1,0 +1,62 @@
+public class Stk {
+	static void pushElem(Stack s,int i)
+	{
+		s.push(new Integer(i));
+		System.out.println("push->"+i);
+		System.out.println("Stack.."+s);
+	}
+	 static void popElem(Stack s)
+	 {
+		 System.out.println("pop->");
+		 Integer i = (Integer) s.pop();
+		 System.out.println(i);
+		 System.out.println("Stack.:"+s);
+	 }
+public static void main(String[] args) {
+	Stack<Integer> s = new Stack<Integer>();
+	System.out.println("Stack..:"+s);
+    pushElem(s, 48);
+    pushElem(s, 19);
+    pushElem(s, 31);
+    pushElem(s, 58);
+    pushElem(s, 73);
+    pushElem(s, 22);
+	try
+	{
+		popElem(s);
+		popElem(s);
+		popElem(s);
+		popElem(s);
+		popElem(s);
+		popElem(s);
+		popElem(s);
+		popElem(s);
+	}
+	catch(Exception e)
+	{
+		e.printStackTrace();
+		System.out.println("Stack is empty");
+	}	
+Agile //  methodology
+-- Iterative approch for Appl devp
+ 
+Single phase sw devp
+ 
+Roles:
+Scrum Master //
+ 
+daily meetings
+Reviews
+Retrospective meetings
+ 
+Product Owner//
+ 
+set release date
+req
+user stories
+ 
+Cross functional team
+ 
+5 teams
+25p
+ 

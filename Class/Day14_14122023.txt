@@ -1,0 +1,63 @@
+TBS
+ 
+ 
+Pid=123
+PName=aaa
+DOB--  15-SEP-1995 = 28y
+Gender m 
+Tot_Seats = 100
+Seat_Booked = 95
+ 
+sr = 30  = 20(s)-18% + 10(s) -32%  inc -  24.7%
+sr = 10 = 200*32%  - 14.7% 
+sr = 6
+fare 200
+ 
+Tot_Cost = 236*5 + 5000 = 6180
+ 
+sc = 10% 
+lk = 14.7% = 24.7%
+ 
+50%>   <75%---18%
+75%>   32%
+ 
+Enter No of Passengers?
+3
+
+has context menu
+
+
+import java.util.Scanner;
+ 
+class Empl
+{
+	int eid;
+	String eName;
+	int sal;
+}
+public class EMS {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter no. of Empl...");
+	int n = sc.nextInt();
+	Empl e[]=new Empl[n];
+	for(int i=0;i<n;i++)
+	{
+		e[i]=new Empl();
+		System.out.println("Enter EMP details....");
+		System.out.println("Enter Eid");
+		e[i].eid=sc.nextInt();
+		System.out.println("Enter eName");
+		e[i].eName=sc.next();
+		System.out.println("enter sal");
+		e[i].sal=sc.nextInt();
+	}
+ 
+	System.out.println("\n\n.. Emp Details Listed below");
+	for(int i=0;i<n;i++) {
+		float hra = e[i].sal*10/100;
+		System.out.println("Emp id: "+e[i].eid+"  EName "
+		+e[i].eName+"  Salary"+e[i].sal+"  HRA"+hra);
+	}
+}
+}

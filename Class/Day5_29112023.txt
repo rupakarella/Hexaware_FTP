@@ -1,0 +1,23 @@
+Normalization in SQL is a process used to organize a relational database efficiently and reduce data redundancy. The goal of normalization is to eliminate data anomalies and ensure that data is stored in a way that supports data integrity.
+
+First Normal Form (1NF):
+Eliminate duplicate columns from the same table.
+Create a separate table for each group of related data and identify each row with a unique column or set of columns (primary key).
+
+
+Second Normal Form (2NF):
+Meet the requirements of 1NF.
+Remove partial dependencies, meaning that non-prime attributes (attributes not part of the primary key) are fully functionally dependent on the entire primary key.
+
+Third Normal Form (3NF):
+Meet the requirements of 2NF.
+Remove transitive dependencies, meaning that non-prime attributes are not dependent on other non-prime attributes.
+
+Boyce-Codd Normal Form (BCNF):
+Definition:
+
+A relation is in BCNF if it is in 3NF, and for every non-trivial functional dependency, the determinant is a superkey.
+
+
+
+

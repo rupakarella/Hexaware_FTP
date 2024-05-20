@@ -1,0 +1,121 @@
+Date: 27.11.2023
+SQL- structured query language
+powerful language for managing and manipulating RDB
+
+Database- any structured collection of data
+
+relational db- type of database that stores and retrieves data organised into tables
+-> uses tabular structure to store and organise data
+-> tables can be related through common fields forming relation b/w tables
+
+Table is structure having rows and columns used to store and organise
+row-> record 
+column-> an attribute or field of that record
+
+datatypes-> kind of data to be stored in a column
+
+DDL- DATA DEFINITION LANGUAGE
+define structure of database
+1. CREATE- create database objects like tables, views
+CREATE TABLE tablename{
+	column1 datatype,
+	column2 datatype;
+---
+};
+2. ALTER- used to modify structure of existing database object
+ALTER TABLE TableName
+ADD Column3 datatype;
+3. DROP- used to delete database object(tables, views) 
+->permanent op, no rollback
+DROP TABLE TableName;
+4. TRUNCATE- remove all rows, retains structure of table
+TRUNCATE TABLE TableName;
+5. RENAME- rename objects in database
+RENAME TABLE oldname To newname;
+
+DML- DATA MANIPULATION LANGUAGE
+->used for managing data stored in database
+1. INSERT- used to add new records to a table
+INSERT INTO TableName (Column1, Column2) VALUES (Value1, Value2);
+2. UPDATE- used to modify existing records in a table
+UPDATE TableName SET column1=NewValue where condition;
+3.DELETE- used to remove records from a table
+DELETE FROM TableName WHERE Condition;
+
+DRL- DATA RETRIEVAL LANGUAGE
+-> used for retrieving data from database
+1. SELECT- used to retrieve data from one or more tables
+SELECT column1, column2 FROM TableName WHERE condition;
+
+TCL- TRANSACTION CONTROL LANGUAGE
+-> used for managing transactions in database to ensure consistency and integrity of the data
+1. COMMIT- saces all changes made during current transaction
+COMMIT;
+2. ROLLBACK- undoes changes made during current transaction;
+ROLLBACK;
+3. SAVEPOINT- sets a point within a transaction to which you can rollback later
+SAVEPOINT savepointName;
+
+DCL- DATA CONTROL LANGUAGE
+-> used to control access to data within a database
+-> manage permissions and privileges related to database objects
+1.GRANT- used to give specific privileges(select, insert, update, delete, or even to create or drop tables) to users
+GRANT privilege ON object TO user;
+2. REVOKE- used to take back or remove specific privileges that have been granted to a user.
+REVOKE privilege ON object FROM user;
+
+SQL
+1. DDL- create, drop, alter, truncate, rename
+2. DML- insert, update, delete
+3. TCL- commit, rollback, savepoint
+4. DRL- select
+5. DCL- grant,revoke
+
+SQL on 
+port: 3306
+username: root
+password: ********
+
+show databases; [gives list of databases]
+create database dbName; [creates a new database]
+use databaseName; [switch to a database]
+show tables; [gives list of tables in the current database]
+
+//create table
+create table emp(eid int, ename varchar(10));
+
+//insert values
+insert into emp values("123",'sagar');
+---
+
+//retrieve data(display table)
+select *from emp;
+
+//retrieve names start with 's'
+select *from emp where ename like "s%";
+
+//retrieve names end with 'a'
+select *from emp where ename like "a%";
+
+//add another column
+alter table emp add sal int;
+
+->by default the values in salary column will be null 
+
+//insert salaries
+update emp set sal=3000 where eid=123;
+---
+
+//display highest salary
+select max(sal) from emp;
+
+//display highest salary with employee name
+select ename,max(sal) from emp;
+
+//display second highest salary
+select max(sal) from emp where sal<(select max(sal) from emp);
+
+-> max() function to give maximum value
+-> min() function to give minimum value
+-> count() function to count no of records
+

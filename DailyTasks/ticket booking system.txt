@@ -1,0 +1,17 @@
+ticket booking system
+it has to ask how many passemgers to travel
+then for all those passengers it should ask id, name, date of birth, gender
+then show available seats
+ask how many seats to reserve
+and then give the fare for his tickets reserved
+the fare is 
+if the passenger is buying ticket after the seat is booked more than 50% and less than 75% then extra fair charge of 18% of OG price 
+
+If it is more than 75% then we have to charge extra 32% 
+
+2nd condition is 
+If the gender is female then reduce the price by 14.7% 
+
+3rd condition is 
+
+If the age of the passenger is more than 60 then the fair charge should be reduced by 10%

@@ -1,0 +1,136 @@
+/api/v1/users/register
+{
+  "emailAddress": "rupakarella212@gmail.com",
+  "contactNumber": "6302523354",
+  "password": "Rupa@123",
+  "firstName": "Rupa",
+  "lastName": "Karella",
+  "dateOfBirth": "2001-12-11",
+  "panNumber": "ABCDE1234F",
+  "employerType": "Full-time",
+  "employerName": "ABC Company",
+  "salary": 50000.00,
+  "userType": "Admin",
+    "address": {
+        "addressLine": "MIG 33, Sri Surya Sai bhavan, HB colony",
+        "city": "Tanuku",
+        "cityPincode": 534211,
+        "state": "AndhraPradesh"
+    }
+}
+-------------------------------------------------------------------
+{
+  "emailAddress": "maheshkarella@gmail.com",
+  "contactNumber": "9247237178",
+  "password": "Mahesh@123",
+  "firstName": "Mahesh",
+  "lastName": "Karella",
+  "dateOfBirth": "2005-08-20",
+  "panNumber": "DCCDE1234F",
+  "employerType": "Unemployed",
+  "salary": 0,
+  "userType": "User",
+    "address": {
+        "addressLine": "Sai skies",
+        "city": "Bhimavaram",
+        "cityPincode": 532001,
+        "state": "Andhra Pradesh"
+    }
+}
+=====================================================================
+/api/v1/login/authenticate
+{
+  "username": "rupakarella212@gmail.com",
+  "password": "Rupa@123"
+}
+======================================================================
+/api/v1/policies/register
+{
+    "policyName": "Vehicle Insurance",
+    "policyDescription": "Comprehensive coverage for damage to your vehicle due to accidents, theft, fire, and natural disasters, along with liability coverage for injuries and property damage to others.",
+    "company": "ABC Insurance Co.",
+    "policyType": "Comprehensive",
+    "initialDeposit": 1000.00,
+    "termPeriod": "Annually",
+    "termAmount": 500.00,
+    "interest": 5.0
+}
+--------------------------------------------------------------------
+{
+    "policyName": "Travel Insurance",
+    "policyDescription": "Provides coverage for medical emergencies, trip cancellations, lost luggage, and other travel-related mishaps during international trips.",
+    "company": "XYZ Travel Insurance",
+    "policyType": "Travel",
+    "initialDeposit": 500.00,
+    "termPeriod": "Monthly",
+    "termAmount": 100.00,
+    "interest": 2.0
+}
+----------------------------------------------------------------------
+{
+    "policyName": "Life Insurance",
+    "policyDescription": "Provides financial protection to your loved ones in the event of your death during the policy term.",
+    "company": "ABC Life Insurance",
+    "policyType": "Term Life",
+    "initialDeposit": 500.00,
+    "termPeriod": "Half-Yearly",
+    "termAmount": 300.00,
+    "interest": 1.0
+}
+-------------------------------------------------------------------------
+{
+    "policyName": "Health Insurance",
+    "policyDescription": "Covers medical expenses for hospitalization, surgeries, and treatments for you and your family members.",
+    "company": "XYZ Health Insurance",
+    "policyType": "Health",
+    "initialDeposit": 10000.00,
+    "termPeriod": "Quarterly",
+    "termAmount": 600.00,
+    "interest": 3.0
+}
+---------------------------------------------------------------------------
+{
+    "policyName": "Child Plan",
+    "policyDescription": "A savings plan designed to secure your child's educational future, providing funds for higher education expenses.",
+    "company": "ABC Financial Services",
+    "policyType": "Education Savings",
+    "initialDeposit": 2000.00,
+    "termPeriod": "Monthly",
+    "termAmount": 200.00,
+    "interest": 3.5
+}
+--------------------------------------------------------------------------
+{
+    "policyName": "Retirement Savings Plan",
+    "policyDescription": "Helps you build a corpus for a comfortable retirement, with regular contributions and tax benefits.",
+    "company": "XYZ Retirement Solutions",
+    "policyType": "Savings & Pension",
+    "initialDeposit": 500.00,
+    "termPeriod": "Quarterly",
+    "termAmount": 300.00,
+    "interest": 4.0
+}
+===============================================================================
+api/v1/userpolicies/register
+{
+        "startDate": "2024-02-16",
+        "durationInYears": 1,
+        "policyId":100006,
+        "userId":10000
+}
+==============================================================================
+/api/v1/payments/register
+{
+    "paymentDate": "2024-02-15",
+    "paymentStatus": "Pending",
+    "paymentMethod": "Credit Card",
+    "userPolicyId":40000
+}
+===================================================================================
+/api/v1/claims/register
+{
+    "claimDate": "2024-02-16",
+    "claimAmount": 100.00,
+    "claimStatus": "Approved",
+    "userPolicyId":40000
+}

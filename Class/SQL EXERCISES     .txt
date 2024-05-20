@@ -1,0 +1,72 @@
+SQL EXERCISES     
+ 
+1.Query to find Second Highest Salary of Employee?
+ 
+2.Query to find duplicate rows in table?
+ 
+3.How to fetch  monthly Salary of Employee if annual salary is given?
+ 
+4.What is the Query to fetch first record from Employee table?
+ 
+5.What is the Query to fetch last record from the table?
+ 
+6.What is Query to display first 5 Records from Employee table
+ 
+7.What is Query to display Nth Record from Employee table?
+ 
+8.How to get 3 Highest salaries records from Employee table?
+ 
+9.How to Display Odd rows in Employee table
+ 
+10.How to Display Even rows in Employee table?
+ 
+11.How to fetch 3rd highest salary using Rank Function?
+ 
+12.How Can i create table with same structure of Employee table
+ 
+13.Display first 50% records from Employee table?
+ 
+14.Display last 50% records from Employee table?
+ 
+15.How Can i create table with same structure with data of Employee table?
+ 
+16.How do i fetch only common records between 2 tables.
+ 
+17.Find Query to get information of Employee where Employee is not assigned to the department
+ 
+18.How to get distinct records from the table without using distinct keyword.
+ 
+19.Select all records from Employee table whose name is ‘Anil and ‘Praveen’
+ 
+20.Select all records from Employee table where name not in ‘Anil and ‘Praveen’
+ 
+21.how to write sql query for the below scenario
+I/p:DATABASE
+O/p:
+D
+A
+T
+A
+B
+A
+S
+E
+22.How to fetch all the records from Employee whose joining year is  2017?
+ 
+23.What is SQL Query to find maximum salary of each department?
+ 
+24.How Do you find all Employees with its managers?(Consider there is manager id also in Employee table)
+ 
+25.Display the name of employees who have joined in 2016 and salary is greater than 10000?
+ 
+26.How to display following using query?
+*
+**
+***
+27.How to add the email validation using only one query?
+ 
+28.How to display 1 to 100 Numbers with query?
+ 
+29.How to remove duplicate rows from table?
+ 
+30.How to find count of duplicate rows? 

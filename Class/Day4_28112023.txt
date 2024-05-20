@@ -1,0 +1,24 @@
+SQL Joins//
+ 
+Combining records from two or more tables.
+ 
+Self Join //  Joining the table itself
+ 
+Inner Join
+-----------
+ 
+	Equi Join// Disp all the conditional matched records
+select tab1.col1,tab2.col2 from tab1 inner join tab2 on tab1.col1=tab2.col2
+	Non Equi Join// Disp all the unconditional records
+select tab1.col1,tab2.col2 from tab1 inner join tab2 on tab1.col1!=tab2.col2
+ 
+Outer Join
+-----------
+	Left outer join// Disp all the records from left table and only cond matched rec from right table
+select tab1.col1,tab2.col2 from tab1 left outer join tab2 on tab1.col1=tab2.col2
+	Right outer join // Disp all the records from right table and only cond matched rec from left table
+select tab1.col1,tab2.col2 from tab1 right outer join tab2 on tab1.col1=tab2.col2
+	Full outer join // comb of left and right
+ 
+Cross join //  Cartesian product of two different tables.
+select *from tab1 cross join tab2

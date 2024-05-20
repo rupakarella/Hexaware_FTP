@@ -1,0 +1,11 @@
+Name- Age,Breed
+Max - 2 years old, Labrador
+Fluffy - 1 years old, Persian
+Rocky - 4 years old, German Shepherd
+Mittens - 3 years old, Ragdoll
+Charlie - 2 years old, Dachshund
+Tango - 4 years old, Husky
+Tango - 3 years old, Husky
+Hash - 6 years old, BullDog
+Buddy - 8 years old, Golden
+Tommie - 6 years old, Pomeranian

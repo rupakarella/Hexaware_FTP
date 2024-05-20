@@ -1,0 +1,99 @@
+Java//
+ 
+PI// HW/SW= OS-- Windows,Unix,Linux,Solaris,CentOS,Ubuntu,Mac.....JVM
+JVM-- Java Virtual Mach
+NW.. LPC RPC.. calls-- Socket prg
+OOPs--
+ 
+Inheritence // Acq prop from base class to derv class
+Single
+Multiple---interface--java class--decl--no def
+Multilevel
+Hierarchical
+Hybrid
+ 
+Obj-- 
+Class--\
+var--int i=9;
+methods//
+int m1(int i,int j)
+{
+return i+j;
+}
+ 
+1.Arith Oper
+2. Calc Simpl Intr, Area of circle, rect, perim of circle using multiple Inh
+ 
+Calic<Ac> extends SI implem Pc,Ar
+
+try
+		{
+			/*
+			 * int i=39,j=0,k; k=i/j; System.out.println(k);
+			 */
+			/*
+			 * String s = "veera"; int i =Integer.parseInt(s); System.out.println(i);
+			 */
+			// String s = null; System.out.println(s.length());
+			int ar[]= {5,1,7,3,2};
+			System.out.println(ar[5]);
+		}
+		catch(ArithmeticException e)
+		{
+			e.printStackTrace();
+			System.out.println("catch1");
+		}
+		catch(NullPointerException n)
+		{
+			n.printStackTrace();
+			System.out.println("catch2");
+		}
+		catch(ArrayIndexOutOfBoundsException n)
+		{
+			n.printStackTrace();
+			System.out.println("catch3");
+		}
+		catch(NumberFormatException n)
+		{
+			n.printStackTrace();
+			System.out.println("catch4");
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			System.out.println("catch5");
+		}
+		finally
+		{
+			System.out.println("finally...");
+		}
+
+
+
+import java.util.HashMap;
+import java.util.Map;
+ 
+public class A {
+	public static void main(String[] args) {
+	HashMap<Integer,String> h = new HashMap<Integer, String>();
+	h.put(1,"hari");
+	h.put(2,"neel");
+	h.put(3,"komal");
+	h.put(4,"tej");
+	h.put(5,"ravi");
+	for(Map.Entry m:h.entrySet())
+	{
+		System.out.println(m.getKey()+"  "+m.getValue());
+	}
+	System.out.println("After modification.........");
+	HashMap<Integer,String> h2 = new HashMap<Integer, String>();
+	h2.put(55,"moni");
+	h2.put(66,"balu");
+	h2.put(77,"walsh");
+	h2.putAll(h);
+	for(Map.Entry m:h2.entrySet())
+	{
+		System.out.println(m.getKey()+"  "+m.getValue());
+	}
+	}
+}

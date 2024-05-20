@@ -1,0 +1,105 @@
+address/add
+{
+  "addressLine": "Sri Surya Sai Bhavan, HB colony",
+  "city": "Tanuku",
+  "cityPincode": 534211,
+  "state": "AndhraPradesh",
+  "users": {
+    "userId": 2,
+    "emailAddress": "maheshkarella9@gmail.com",
+    "contactNumber": "9247237178",
+    "password": "Mahesh@123",
+    "firstName": "Mahesh",
+    "lastName": "Karella",
+    "dateOfBirth": "2005-08-20",
+    "panNumber": "AGTDE1234F",
+    "employerType": "Full-time",
+    "employerName": "Hexaware Technologies",
+    "salary": 50000.00,
+    "userType": "User"
+  }
+}
+users/register
+{
+    "userId": 252,
+    "emailAddress": "rupakarella212@gmail.com",
+    "contactNumber": "6302523354",
+    "password": "Rupa@123",
+    "firstName": "Rupa",
+    "lastName": "Karella",
+    "dateOfBirth": "2001-12-11",
+    "panNumber": "ABCDE1234F",
+    "employerType": "Full-time",
+    "employerName": "Hexaware Technologies",
+    "salary": 50000.0,
+    "userType": "Admin",
+    "address": {
+        "addressLine": "Sri Surya Sai bhavan, HB colony",
+        "city": "Tanuku",
+        "cityPincode": 534211,
+        "state": "AndhraPradesh"
+    },
+    "userPolicies": null
+}
+userPolicies/add
+{
+    "user": {
+        "emailAddress": "deva@gmail.com",
+        "password": "Deva&999",
+        "contactNumber":"9998887773",
+        "firstName": "Deva",
+        "lastName": "G",
+        "dateOfBirth": "2001-12-11",
+        "panNumber": "HIJKL5678M",
+        "employerType": "Employer",
+        "employerName": "Hexaware",
+        "salary": 50000.00,
+        "userType": "Admin",
+        "address":
+        {
+            "addressLine":"Sri Surya Sai Bhavan",
+            "city":"Tanuku",
+            "cityPincode":534211,
+            "state":"Andhra Pradesh"
+        }
+    },
+    "policy": {
+        "policyName": "Car Policy",
+        "policyDescription": "Description of Policy A",
+        "company": "ABC Insurance",
+        "policyType": "Type A",
+        "maturityAmount": 100000.00,
+        "initialDeposit": 5000.00,
+        "termPeriod": "Annually",
+        "termAmount": 2000.00,
+        "interest": 5.0
+    },
+    "claims": [
+        {
+            "claimId": 987654321,
+            "claimDate": "2023-02-09",
+            "claimAmount": 100.00,
+            "claimStatus": "Approved"
+        }
+    ],
+    "startDate": "2024-02-10",
+    "durationInYears": 1
+}
+claims/register
+
+        {
+            "claimId": 987654321,
+            "claimDate": "2023-02-09",
+            "claimAmount": 100.00,
+            "claimStatus": "Approved",
+            "userPolicies":
+            {
+                "userPoliciesId":120,
+                 "startDate": "2024-02-10",
+                 "durationInYears": 1
+            }
+
+        }
+   
+
+

@@ -1,0 +1,100 @@
+Programming Technq
+ 
+Lang vs Package
+ 
+Lang //  set of instructions written in an order to devp Appl
+ 
+Appl?  Set of req given by the client-- to meet the businees  needs
+ 
+Standalone -- Desktop -- single user 
+Web Appl--- Multi user--Server side appl--Single server
+Entrp Appl---   Multoiple servers
+ 
+
+MVC//  Model View Controller
+ 
+C
+C++
+Java
+
+
+[10:27 AM] IPPILI PRANAY KUMAR (Guest)
+https://chat.whatsapp.com/ISARcZNJoyIFMROcJn4Ayv
+[10:28 AM] IPPILI PRANAY KUMAR (Guest)
+guys kindly join the whatsapp group created for our batch using the above link
+ like 3
+
+
+Problem?--- requires logical thought to solve
+ 
+Prob solving?--ident,determin the best alternate sol to implem
+ 
+ 
+Analyze
+Choose an approp method
+design sol
+impl / devp
+test sol
+ 
+ 
+Flow chart // symbolic rep of an alg--- shapes
+ 
+Algorithm?// Seq of steps  to solve a problem.
+ 
+Steps:
+1. Identify Input / output
+2. Identify constants and control stmt to solve
+3.impl logic
+ 
+ 
+step1. begin
+2. read a,b
+3. add a,b and store in c c:=c+b
+4.display c
+5. end
+ 
+
+
+
+write an Alogorithm and draw the Flow chart and java code for the following
+ 
+1. Biggest of 3 No.s
+2.Simple Interest
+3.Fibonocci series    0 1 1 2 3 5 8 13.....
+4.Even / Odd
+5.Swapping of 2 No.s 2 cases
+ 
+a=5,b=3
+ 
+a=a+b=8
+b=a-b = 8-3 = 5
+a=a-b = 8-5 = 3
+ 
+a=3 b=5
+ 
+6 Palendrom /   LIRIL MADAM MALAYALAM LEVEL NITIN DAD MOM......
+ 
+7 Stud ( sid , sname , m1,m2,m3, tot?, avg?)
+123
+alik
+45
+65
+73
+avg>=60-1class
+avg>=50 < 60 - 2 class
+avg>=35<50 - 3 class
+ 
+8 Emp(eid,ename,basic-- hra-12%b,ta-5%b,da-8%b,gross)
+ 
+eid=123
+ename=moni
+basic=10000
+hra = basic*12/100
+ta
+da
+gross= b+h+t+d
+ 
+g>=25k-A
+g>=10<25-B
+g<10 C
+ 
